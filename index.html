@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новогодний Календарь 2024</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключаем красивый шрифт -->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Marck+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-snowflake"></i> Новогодний Календарь 2024</h1>
+            <div class="controls">
+                <button id="prev-month"><i class="fas fa-chevron-left"></i> Предыдущий</button>
+                <h2 id="current-month">Декабрь 2024</h2>
+                <button id="next-month">Следующий <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </header>
+
+        <div class="calendar">
+            <div class="weekdays">
+                <div>Пн</div>
+                <div>Вт</div>
+                <div>Ср</div>
+                <div>Чт</div>
+                <div>Пт</div>
+                <div class="weekend">Сб</div>
+                <div class="weekend">Вс</div>
+            </div>
+            <div class="days" id="calendar-days">
+                <!-- Дни будут вставлены через JavaScript -->
+            </div>
+        </div>
+
+        <div class="legend">
+            <h3><i class="fas fa-star"></i> Обозначения:</h3>
+            <div class="legend-items">
+                <div><span class="legend-box holiday"></span> Праздничный день</div>
+                <div><span class="legend-box weekend-day"></span> Выходной день</div>
+                <div><span class="legend-box today"></span> Сегодня</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
